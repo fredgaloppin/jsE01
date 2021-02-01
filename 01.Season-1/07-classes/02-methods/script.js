@@ -2,5 +2,22 @@
 
 
 (() => {
-    // your code here
+    class Person {
+        constructor(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+        sayhello() {
+            return ("Hello "+this.firstname+" "+ this.lastname)
+        }
+    }
+    
+    document.getElementById("run").addEventListener("click", () => {
+
+        let neo = new Person("Arturus", "Whitekop");
+
+        console.log(neo.sayhello());
+     
+    });
+
 })();

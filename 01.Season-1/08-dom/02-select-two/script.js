@@ -2,7 +2,9 @@
 
 
 (() => {
-
-    // your code here
+    // p[1].textContent='owned';
+    let x = document.querySelector('section > p');
+    console.log(x);
+    x.textContent = "owned";
 
 })();

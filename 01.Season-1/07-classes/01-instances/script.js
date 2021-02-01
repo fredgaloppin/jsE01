@@ -14,9 +14,16 @@
     nuevocat = new Cat("Pixel", 6);
     cats.push(nuevocat);
     document.getElementById("run").addEventListener("click", () => {
-        
-        console.log(cats.find(element => element == Skitty));
-        console.log(cats.find(element => element == Pixel));
+        function findObject(array, key, value) {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i][key] === value) {
+                    return array[i];
+                }
+            }
+            return null;
+        }
+        console.log(findObject(cats, "name", "Skitty"));
+        console.log(findObject(cats, "name", "Pixel"));
 
     });
 })();
