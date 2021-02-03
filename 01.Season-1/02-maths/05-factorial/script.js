@@ -15,8 +15,8 @@
             else {
                 return (num * factorialize(num - 1));
             }
-          }
-          alert(factorialize(n));
+        }
+        alert(factorialize(n));
 
     });
 

@@ -3,6 +3,12 @@
 
 (() => {
 
-    // your code here
+	let image = document.getElementById("source");
+	let img = document.createElement('img'); 
+    img.src = image.dataset.image;
+	document.getElementById('source').appendChild(img);
+	let v = document.getElementById('source');  
+	delete v.dataset.image;
 
+	
 })();
