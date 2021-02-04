@@ -3,16 +3,20 @@
 
 (() => {
 
-	let image = document.getElementById("source");
-	let img = document.createElement('img'); 
-    img.src = image.dataset.image;
-	document.getElementById('source').appendChild(img);
-	let v = document.getElementById('source'); 
- 
+	
+	var x = document.getElementsByTagName("img")[0];
+	x.addEventListener("mouseover", myFunction);
+	// let origin = x.src;
+	let neo = x.dataset.hover;
+	// console.log(x); 
+	// console.log(origin);
+	// console.log(neo);
+	function myFunction() {
+		x.src = neo;
+	  }
+	  
+	
 })();
 
-{/* <section class="material">
-<figure>
-  <img src="../../_shared/img/kiss.svg" alt="Kiss?" data-hover="../../_shared/img/kiss-wink-heart.svg" />
-</figure>
-</section> */}
+
+

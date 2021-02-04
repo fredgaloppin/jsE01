@@ -19,20 +19,21 @@
         user: null,
     };
     document.getElementById("run").addEventListener("click", () => {
-        computers.forEach(element => {
-        let thereA = element.hasOwnProperty('available');
-            if (thereA == false) {
-                element.available = true;
-            }
-        let thereO = 'os' in element;
-            if (thereO == false) {
-                element.os = "linux";
-            }
-        let thereU = element.hasOwnProperty('user');
-            if (thereU == false) {
-                element.user = null;
-            }
-            
+        computers.forEach(id => {
+        // let thereA = element.hasOwnProperty('available');
+        //     if (thereA == false) {
+        //         element.available = true;
+        //     }
+        // let thereO = 'os' in element;
+        //     if (thereO == false) {
+        //         element.os = "linux";
+        //     }
+        // let thereU = element.hasOwnProperty('user');
+        //     if (thereU == false) {
+        //         element.user = null;
+        //     }
+            test = Object.assign({},defaultProps,id);
+            Object.assign(id, test);
         });
         console.table(computers);
     });

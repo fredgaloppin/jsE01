@@ -9,13 +9,13 @@
     let month = document.querySelector("#dob-month").value;
     let year = document.querySelector("#dob-year").value;
     let age = today.getFullYear() - year;
-    console.log(year);
-    console.log(today.getFullYear());
-    console.log(age);
-    console.log(month);
-    console.log(today.getMonth());
-    console.log(today.getDate());
-    console.log(day);
+    // console.log(year);
+    // console.log(today.getFullYear());
+    // console.log(age);
+    // console.log(month);
+    // console.log(today.getMonth());
+    // console.log(today.getDate());
+    // console.log(day);
     if (month>today.getMonth() + 1) {
         age -= 1;
     } 

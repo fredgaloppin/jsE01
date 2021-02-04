@@ -2,7 +2,17 @@
 
 
 (() => {
-
-    // your code here
-
+    document.getElementById("run").addEventListener("click", () => {
+        let passw = document.getElementById("pass-one").value;
+        let repassw = document.getElementById("pass-two").value;
+        if (passw === repassw) {
+            alert("Well done!");
+        } else {
+            Array.from(document.querySelectorAll("input")).forEach($input =>
+                $input.style.border = "thick solid red"
+            );
+            
+        }
+    });
 })();
+

@@ -10,7 +10,20 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
-
-    // your code here
+    const x = document.getElementsByTagName("img")[0];
+ 
+    let i = 0;
+        document.getElementById("next").addEventListener("click", () => {
+            if (i == gallery.length-1) {
+                i = 0;
+            } else {
+                i += 1;
+            }
+            x.src = gallery[i];
+              
+        });
+    
 
 })();
+
+
